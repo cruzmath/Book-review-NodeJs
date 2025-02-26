@@ -1,0 +1,4 @@
+- curl "localhost:8080/customer"
+- curl -H "Content-Type: application/json" -X POST "localhost:8080/register" -d '{"user":{"username":"matheus","password":123}}'
+- curl -H "Content-Type: application/json" -X POST "localhost:8080/customer/login" -d '{"user":{"username":"matheus","password":123}}'
+- curl -H "Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoibWF0aGV1cyIsInBhc3N3b3JkIjoxMjN9LCJpYXQiOjE3NDA1ODUwODMsImV4cCI6MTc0MDU4NTM4M30.HNVlj25WLcIvIXtPIhTleWHFZvIgEfLMOf4d6m0EEEk" "localhost:8080/customer"
