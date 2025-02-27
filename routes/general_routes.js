@@ -1,7 +1,7 @@
 const express = require('express');
 let books = require('./books');
 const public_users = express.Router();
-let customers = require('./customer_routes').users
+let customers = require('./customer_routes').users;
 
 public_users.post("/register", (req,res) => {
     const{ username, password} = req.body.user
@@ -40,7 +40,7 @@ public_users.get('/title/:title',function (req, res) {
     let title = req.params.title;
     let filtered_books = [];
     for(let i = 1; i <= Object.keys(books).length; i++){
-        book = books[i]
+        book = books[i];
         if(book.title == title){
             filtered_books.push(book);
         }
